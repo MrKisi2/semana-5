@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      input[type="text"],
+      input[type="number"],
+      select {
+        padding: 12px 20px;
+        margin: 2px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"],
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 2px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover,
+      button {
+        background-color: #45a049;
+      }
+
+      div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <input placeholder="Nome 1" type="text" name="name1" id="name1" />
+    <input placeholder="Nome 2" type="text" name="name2" id="name2" />
+    <input placeholder="Nome 3" type="text" name="name3" id="name3" />
+    <button onclick="ordenar()">ordenar</button>
+    <br />
+    <span id="result"></span>
+    <script src="./script.js"></script>
+  </body>
+</html>
